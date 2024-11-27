@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"name": "projeto",
+			"path": ".."
+		},
+		{
+			"name": "font",
+			"path": "../../../Desktop/conectaVendas/paginaDeLogin/font"
+		},
+		{
+			"name": "img",
+			"path": "../../../Desktop/conectaVendas/paginaDeLogin/img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "projeto",
+		"liveServer.settings.port": 5501
+	}
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}    
+@font-face {
+    font-family: regular;
+    src: url(font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: semi;
+    src: url(font/Poppins-SemiBold.ttf);
+}
+main{
+    display: flex;
+    height: 100%;
+}
+.bola{
+    width: 50%;
+    background-color: #F8F8F8;
+    height: 703px;
+    display: grid;
+    place-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    display: grid;
+    place-items: center;
+    display: block;
+    margin-left: 110px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "regular";
+    font-size: 14px;
+    padding-left: 500px;
+}
+.titulo{
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-family: "semi";
+    color: #ADADAD;
+    font-weight: 100;
+}
+.cadastro {
+    font-size: 38px;
+    font-family: "semi";
+}
+button{
+    width: 500px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #424242;
+    border: 1px solid black;
+    color: white;
+    font-family: "regular";
+    transition: background-color 0.4s ease;
+}
+input{
+    border: 1px solid #DCDCDC;
+    width: 480px;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+::placeholder{
+    color: #DCDCDC;
+    padding-left: 15px;
+    font-size: 15px;
+}
+.linha{
+    background-color: black;
+    height: 1px;
+    width: 280px;
+    margin-top: 25px;
+    margin-left: 26px;
+}
+.central{
+    display: grid;
+    place-items: center;
+    padding-top: 185px;
+}
+button:hover{
+    background-color: #3F37E5;
+    border: #3F37E5;
+}
+</style>
+
+<body> 
+<main>
+    <section class="bola">
+        <img src="img/bolinhaAzul.png" alt="imagem bolinha">
+</section>
+    <section class="info">
+        <br>
+        <br>
+    <a href="">Voltar></a>
+    <div class="central">
+        <h1 class="cadastro">Cadaste se no ConectaVendas </h1>
+        <br>
+
+    <form action="/" method="post">
+        <h1 class="titulo">Criar Conta</h1>
+            <input type="hidden" name="id" />
+            <input type="text" placeholder="Nome" name="nome" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Senha">
+            <button type="submit">Cadastrar</button>
+    </form>
+    <br>
+        <div class="linha"></div>
+    </div>
+</section>
+</main>
+</body>
+</html>
