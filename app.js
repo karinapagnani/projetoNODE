@@ -1,4 +1,5 @@
 const express = require('express')
+
 const bodyParser = require('body-parser')
 
 const mysql = require('mysql2');
@@ -64,6 +65,8 @@ app.get("/adicionar", function (req, res) {
     })
 })
 
+//ROTAS POST
+
 app.post("/", (req, res) => {
     let nome = req.body.nome
     let email = req.body.email
@@ -77,12 +80,10 @@ app.post("/", (req, res) => {
     })
 
 
-    // SQL
    let sql = `INSERT INTO usuarios (nome, email, senha) VALUES ('${nome}', '${email}', '${senha}')`;
         
-   // Executar comando SQL
+   
    conexao.query(sql, function(erro, retorno){
-    // Caso ocorra algum erro
     if(erro) throw erro;
        console.log(retorno);
    });
